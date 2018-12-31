@@ -1,0 +1,280 @@
+body {
+    background-image: url('images/bg.jpg');
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../images/bg3.gif');
+    background-position: center;
+    background-size: 150%;
+    cursor: pointer, default;
+}
+
+.center {
+    display: block;
+    width: 100%;
+    margin-left: 20%;
+    margin-right: auto;
+    align-content: center;
+}
+
+.dock {
+    height: 80px;
+    background-color: white;
+    opacity: 0.8;
+    position: absolute;
+    text-align: center;
+    bottom: 5px;
+    margin: 0 auto;
+    width: 60%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    box-shadow: 3px 2px grey;
+}
+
+ul {
+    font-size: 6px;
+    font-weight: bold;
+    margin-right: 0px;
+    margin-left: 0px;
+    list-style-type: none;
+    margin: 0px;
+    background-color: white;
+    opacity: 0.9;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.word{
+    width: 7%;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+}
+
+.word:hover{
+    cursor: pointer;
+}
+
+.st {
+    width: 7%;
+    position: absolute;
+    top: 220px;
+    right: 30px;
+    border: white;
+}
+
+.icon-label{
+    position: absolute;
+    top: 150px;
+    font-weight: bold;
+    right:30px;
+    color: white;
+    font-variant: small-caps;
+}
+
+.resume{
+    width: 70px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+}
+
+.dialog-title{
+    font-variant: small-caps;
+}
+
+.subtitle {
+    margin: 0 0 2em 0;
+}
+
+.subtitle{
+    text-align: center;
+    height: 10px;
+}
+
+li {
+    display: inline;
+    float: left;
+    line-height: 1px;
+    font-family: helvetica;
+    font-variant: small-caps;
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+    border-left: 1px groove;
+    border-right: 1px groove;
+    border-radius: 3px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+    background-color: #ebe5ff;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+h1{
+	text-align: center;
+  	font-style: oblique;
+  	font-size: 17px;
+  	margin-bottom: 0px;
+  	margin-top: 0px;
+    padding-top: 0px;
+    line-height: 1;
+    font-variant: small-caps;
+    top: -8px;
+    right: -8px;
+    position: absolute;
+}
+
+.dialog{
+    width: 300px;
+}
+
+/*h2{
+	text-align: center;
+	font-size: 35px;
+	color: white;
+	border-left: black 5px;
+	outline: 1px black;
+}*/
+
+.folder-title-drag {
+    cursor: move;
+}
+
+
+.desktop-folder__title-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: 0 0.8rem 0 2.5rem;
+    height: 4rem;
+    background-image: url('../img/window-tres-lineas.svg');
+    background-position: 50% 0.4rem;
+    background-size: 67rem 1.3rem;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.dialog-title {
+    pointer-events: none;
+    padding: 0 0.5rem;
+    background-color: #DADAD3;
+}
+
+img{
+	align: center;
+	border-radius: 40px;
+}
+
+a:link {
+    color: #ca80fc;
+    font-style: oblique;
+}
+
+a:visited{
+	color: #ca80fc;
+	font-style: oblique;
+}
+
+a:active {
+    color: #ca80fc;
+}
+
+td {
+	border: 2.0px solid rgb(204,204,204);
+}
+
+br {}
+
+.container {
+    position: relative;
+    margin-left: 435px;
+    width: 30%;
+    padding: 0;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.icon{
+    width: 14%;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    margin: 0px;
+    position: relative;
+    left: 20px;
+    top: 8px;
+}
+
+
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  padding: 16px 42px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 6px #6035ba;
+  background: #854cff;
+color: #fff;
+}
+
+.text:hover {
+	box-shadow: 0 4px #6035ba;
+	top: 2px;
+}
+
+.text:active {
+	box-shadow: 0 0 #ab3c3c;
+	top: 6px;
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
