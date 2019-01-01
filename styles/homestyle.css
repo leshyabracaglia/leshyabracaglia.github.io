@@ -66,6 +66,10 @@ ul {
     border: white;
 }
 
+.st:hover {
+    cursor: pointer;
+}
+
 .icon-label{
     position: absolute;
     top: 150px;
@@ -73,6 +77,23 @@ ul {
     right:30px;
     color: white;
     font-variant: small-caps;
+}
+
+.icon-label:hover {
+    cursor: pointer;
+}
+
+.icon-label2 {
+    position: absolute;
+    top: 300px;
+    font-weight: bold;
+    right: 30px;
+    color: white;
+    font-variant: small-caps;
+}
+
+.icon-label2:hover {
+    cursor: pointer;
 }
 
 .resume{
