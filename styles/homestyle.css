@@ -48,8 +48,6 @@ ul{
     box-shadow: 0px 3px 4px 0px rgba(255,255,255,0.75);
 }
 
-
-
 .word{
     width: 7%;
     position: absolute;
@@ -62,6 +60,14 @@ ul{
     position: absolute;
     bottom: 0px;
     left: 0px;
+    background-color: black;
+}
+
+.icon3 {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 130px;
     background-color: black;
 }
 
@@ -105,6 +111,15 @@ ul{
     bottom: 10px;
     font-weight: bold;
     left: 350px;
+    color: white;
+    font-variant: small-caps;
+}
+
+.icon-label3 {
+    position: absolute;
+    bottom: 10px;
+    font-weight: bold;
+    left: 365px;
     color: white;
     font-variant: small-caps;
 }
@@ -165,8 +180,8 @@ h1{
     line-height: 1;
     color: white;
     font-variant: small-caps;
-    top: -5px;
-    right: -100px;
+    top: 13px;
+    right: 15px;
     position: absolute;
 }
 
@@ -230,8 +245,6 @@ a:active {
 td {
 	border: 2.0px solid rgb(204,204,204);
 }
-
-br {}
 
 .container {
     position: relative;

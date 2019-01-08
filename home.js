@@ -21,7 +21,7 @@ var minutes = now.getMinutes();
     }
 
     // call this function again in 1000ms
-    formatted += "   <img src='images/battery.png' class='icon'>";
+    formatted += "    &nbsp;&nbsp;&nbsp;Leshya Bracaglia";
     $("h1").html(formatted);
     setTimeout(updateClock, 1000);
     
