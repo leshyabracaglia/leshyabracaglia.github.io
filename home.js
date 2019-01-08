@@ -29,8 +29,8 @@ var minutes = now.getMinutes();
 
 $(document).ready(function () { //open resume when clicked
 
-  $(".word").on("click", resume);
-    $(".icon-label").on("click", resume);
+  $(".word").on("dblclick", resume);
+    $(".icon-label").on("dblclick", resume);
 
 });
 
@@ -42,6 +42,32 @@ function resume() {
     $(".dialog").draggable();
 
      $("#frame").attr("src", "images/resume.pdf");
+
+}
+
+$(document).ready(function () { //open slacktribe example website when clicked
+
+  $(".st").on("dblclick", slacktribe);
+    $(".icon-label2").on("dblclick", slacktribe);
+
+});
+
+$(document).ready(function () { //shadow when one click
+
+  $(".st").on("click", shadow);
+    $(".icon-label2").on("click", shadow);
+
+});
+
+function shadow(){
+
+    $(".st").css({
+  "filter":"drop-shadow(0 0 50px #EFEFEF)"});
+}
+
+function slacktribe(){
+
+    window.location.href = "http://leshyabracaglia.me/slacktribe.html";
 
 }
 
