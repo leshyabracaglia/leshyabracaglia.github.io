@@ -86,7 +86,7 @@ function slacktribe(){
 }
 function cio(){
 
-    window.location.href = "http://leshyabracaglia.me/mycio/home.html";
+    window.location.href = "http://leshyabracaglia.me/mycio.html";
 
 }
 
