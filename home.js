@@ -59,15 +59,34 @@ $(document).ready(function () { //shadow when one click
 
 });
 
+$(document).ready(function () { //open resume when clicked
+
+  $(".cio").on("dblclick", cio);
+    $(".icon-label3").on("dblclick", cio);
+
+});
+
+$(document).ready(function () { //open resume when clicked
+
+  $(".cio").on("click", shadow);
+    $(".icon-label3").on("click", shadow);
+
+});
+
 function shadow(){
 
-    $(".st").css({
+    $(this).css({
   "filter":"drop-shadow(0 0 50px #EFEFEF)"});
 }
 
 function slacktribe(){
 
     window.location.href = "http://leshyabracaglia.me/slacktribe.html";
+
+}
+function cio(){
+
+    window.location.href = "http://leshyabracaglia.me/mycio/home.html";
 
 }
 

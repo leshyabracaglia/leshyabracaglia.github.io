@@ -1,0 +1,213 @@
+﻿body {
+    background-image: url(images/building.jpg);
+}
+
+.navbar { /*physical navbar bg*/
+    height: 140px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    overflow: hidden;
+}
+
+.navbar-brand { /*logo image*/
+    padding: 20px 20px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.navbar-toggle {
+    /* (80px - button height 34px) / 2 = 23px */
+    margin-top: 23px;
+    padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav > li > a { /*items in nav*/
+        /* (80px - line-height of 27px) / 2 = 26.5px */
+        padding-top: 26.5px;
+        padding-bottom: 26.5px;
+        padding-left: 50px;
+        padding-right: 50px;
+        line-height: 87px;
+    }
+}
+
+li{ /*front of nav*/
+    font-size: 30px;
+    font-family: 'Slabo 27px', serif;
+}
+
+a{ /*color of nav*/
+   /*color: #2276f4;*/
+   color: black;
+}
+
+ .nav {
+    overflow: hidden;
+}
+
+#blank1{
+    height: 360px;
+    border: 10px black;
+}
+
+#block1 {
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 10px;
+}
+
+#block2 {
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    cursor: default;
+    font-family: 'Slabo 27px', serif;
+    font-size: 45px;
+    color: rgb(0, 119, 191);
+
+}
+
+h2 {
+    text-align: center;
+    cursor: default;
+    font-size: 30px;
+    font-family: 'Slabo 27px', serif;
+    color: rgb(121, 186, 1);
+}
+
+p {
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 150px;
+    cursor: default;
+    padding-right: 150px;
+}
+
+.link {
+    font-size: 27px;
+    text-align: center;
+    font-family: 'Slabo 27px', serif;
+    padding-left: 150px;
+    padding-right: 150px;
+    color: rgb(121, 186, 1);
+}
+
+    .link:hover {
+        text-align: center;
+        font-family: 'Slabo 27px', serif;
+        padding-left: 150px;
+        padding-right: 150px;
+        color: #a02020;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+   /*CIO*/
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.services-inner {
+    border: 2px solid rgb(0, 119, 191);
+    ;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.our-services-img {
+    float: left;
+    margin-left: -36px;
+    margin-right: 22px;
+    margin-top: 28px;
+}
+
+.our-services-text {
+    padding-right: 10px;
+    overflow: hidden;
+    padding: 15px 20px 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+    .our-services-text h4 {
+        color: #222222;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: rgb(121, 186, 1);
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+        padding-bottom: 10px;
+        position: relative;
+    }
+
+        .our-services-text h4::before {
+            background: #ec6d48 none repeat scroll 0 0;
+            bottom: 0;
+            content: "";
+            height: 1px;
+            position: absolute;
+            width: 35px;
+        }
+
+.our-services-wrapper:hover .services-inner {
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid transparent;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.our-services-text p {
+    margin-bottom: 0;
+}
+
+.our-services-text p {
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 150px;
+}
+
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+section {
+    padding: 20px 0;
+    margin-left: 0px;
+}
+
+    section .section-title {
+        text-align: center;
+        color: #007b5e;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        margin-left: 0px;
+    }
+
+#footer {
+    background: rgba(0, 0, 0, 0) !important;
+    color: white;
+    width: 100%;
+}
+
+    #footer a {
+        color: #ffffff;
+        text-decoration: none !important;
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+    }
+
+
+@media (max-width:767px) {
+    #footer h5 {
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+}
+
