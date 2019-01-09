@@ -25,7 +25,18 @@ body {
     opacity: 0.7;
     position: absolute;
     text-align: center;
-    bottom: 2px;
+    bottom: 1%;
+    margin: 0 auto;
+    width: 75%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.dock2 {
+    height: 170px;
+    position: absolute;
+    text-align: center;
+    bottom: 1%;
     margin: 0 auto;
     width: 75%;
     border-top-left-radius: 7px;
@@ -34,10 +45,8 @@ body {
 }
 
 ul{
-    font-size: 6px;
+    font-size: medium;
     font-weight: bold;
-    margin-right: 0px;
-    margin-left: 0px;
     list-style-type: none;
     margin: 0px;
     background-color: black;
@@ -71,38 +80,21 @@ ul{
     position: absolute;
     bottom: 60px;
     left: 200px;
-    background-color: black;
 }
-
-.st {
-    width: 90%;
-}
-
-.st:hover {
-    cursor: pointer;
-}
-
 .icon-label2 {
     font-weight: bold;
     color: white;
     font-variant: small-caps;
 }
 
-.icon-label2:hover {
-    cursor: pointer;
-}
-
 #icon2 {
-    width: 100px;
-    height: 100px;
     position: absolute;
-    bottom: 60px;
-    left: 370px;
-    background-color: black;
+    bottom: -2%;
+    left: 50%;
 }
 
-.cio {
-    width: 80%;
+#icon2:hover {
+    cursor: pointer;
 }
 
 .cio:hover {
@@ -112,20 +104,20 @@ ul{
 .icon-label3 {
     font-weight: bold;
     color: white;
+    margin-left: 9%;
+    text-align: justify;
     font-variant: small-caps;
 }
 
-.icon-label3:hover {
-    cursor: pointer;
+#icon3 {
+    width: 10%;
+    position: absolute;
+    bottom: -2%;
+    right: 33%;
 }
 
-#icon3 {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    bottom: 60px;
-    left: 600px;
-    background-color: black;
+#icon3:hover {
+    cursor: pointer;
 }
 
 .resume{
@@ -244,4 +236,37 @@ td {
 
 .container:hover .middle {
   opacity: 1;
+}
+
+.window{
+    height: 50%;
+    width: 50%;
+    background-color: /*rgb(47,44,50)*/rgb(40,33,40);
+    border: solid 2px black;
+    top: 10%;
+    left: 5%;
+}
+
+.winhead {
+    height: 10%;
+    background-color: rgb(67,65,70);
+    border: solid 1px black;
+    padding-bottom: 1%;
+    padding-top: 0;
+
+}
+
+.winhead:hover{
+    cursor: move;
+}
+
+p.wtext{
+    font-size: 2vw;
+    margin: 0;
+    margin-bottom: 50%;
+    padding: 0;
+}
+
+.close:hover{
+    cursor: pointer;
 }
