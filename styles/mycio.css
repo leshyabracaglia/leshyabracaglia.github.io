@@ -3,15 +3,15 @@
     padding: 0;
 }
 
-.navbar-brand { /*logo image placement*/
-    padding: 20px 20px;
-    height: 80px;
-    line-height: 80px;
-}
-
 #blank1{
     height: 150px;
-    border: 10px black;
+}
+
+@media (max-width:600px) {
+    #blank1 {
+        height: 100px;
+        padding-left: 0;
+    }
 }
 
 #block1 {
@@ -21,7 +21,7 @@
 
 @media (max-width:600px) {
     #block1{
-        padding-left: 0;
+        padding: 0;
     }
 }
 
@@ -56,7 +56,7 @@ h3 {
 }
 
 p {
-    font-size: 17px;
+    font-size: medium;
     font-family: 'Roboto', sans-serif;
     padding-left: 150px;
     cursor: default;
@@ -171,7 +171,6 @@ section {
         color: #ffffff;
         text-decoration: none !important;
         background-color: transparent;
-        -webkit-text-decoration-skip: objects;
     }
 
 
@@ -200,11 +199,11 @@ section {
         font-size: 17px;
     }
 
-        /* Change the color of links on hover */
-        .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
+ /* Change the color of links on hover */
+ .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+ }
 
 /* Add an active class to highlight the current page */
 .active {
