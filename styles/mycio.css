@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+@media (max-width:600px) {
+    body {
+        width: 100%;
+    }
+}
+
 #blank1{
     height: 150px;
 }
@@ -15,14 +21,10 @@
 }
 
 #block1 {
-    height: 450px;
+    height: 170%;
     background-color: rgba(255, 255, 255, 0.85);
-}
-
-@media (max-width:600px) {
-    #block1{
-        padding: 0;
-    }
+    padding: 0;
+    margin: 0;
 }
 
 #block2 {
@@ -30,6 +32,13 @@
     background-color: rgba(255, 255, 255, 0.95);
     padding: 10px;
 }
+
+@media (max-width:600px) {
+    #block2 {
+        height: 900px;
+    }
+}
+
 
 h1 {
     text-align: center;
@@ -58,9 +67,9 @@ h3 {
 p {
     font-size: medium;
     font-family: 'Roboto', sans-serif;
-    padding-left: 150px;
+    padding-left: 50px;
     cursor: default;
-    padding-right: 150px;
+    padding-right: 20px;
 }
 
 .link {
@@ -89,7 +98,6 @@ p {
 
 .services-inner {
     border: 2px solid rgb(0, 119, 191);
-    ;
     margin-left: 35px;
     transition: .3s;
 }
@@ -126,7 +134,7 @@ p {
             content: "";
             height: 1px;
             position: absolute;
-            width: 35px;
+            width: 33.3%;
         }
 
 .our-services-wrapper:hover .services-inner {
@@ -152,14 +160,6 @@ section {
     padding: 20px 0;
     margin-left: 0px;
 }
-
-    section .section-title {
-        text-align: center;
-        color: #007b5e;
-        margin-bottom: 50px;
-        text-transform: uppercase;
-        margin-left: 0px;
-    }
 
 #footer {
     background: rgba(0, 0, 0, 0) !important;
@@ -194,7 +194,6 @@ section {
         display: block;
         color: #f2f2f2;
         text-align: center;
-        padding: 10px 16px;
         text-decoration: none;
         font-size: 17px;
     }
