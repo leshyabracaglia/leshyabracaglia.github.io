@@ -48,13 +48,29 @@ function resume() {
 $(document).ready(function () { //home window
 
     $( ".window" ).draggable({ containment: 'body' });
-    $( ".window" ).resizable();
-    $(".close").on("click", close);
+    $( ".portfolio" ).draggable({ containment: 'body' });
+
+    $("#close1").on("click", close);
+    $("#close2").on("click", close2);
+     $("#icon4").on("click", welcome);
+    $("#icon1").on("click", welcome2);
 
 });
 
 function close(){
     $(".window").hide();
+}
+
+function close2(){
+    $(".portfolio").hide();
+}
+
+function welcome(){
+    $(".window").show();
+}
+
+function welcome2(){
+    $(".portfolio").show();
 }
 
 $(document).ready(function () { //open slacktribe example website when clicked
@@ -71,9 +87,29 @@ $(document).ready(function () { //open resume when clicked
 
 });
 
+$(document).ready(function () { //open resume when clicked
+
+  $("#linkedin").on("click", function(){
+
+        window.open('http://www.linkedin.com/in/leshya-bracaglia');
+
+    });
+
+});
+
+$(document).ready(function () { //open resume when clicked
+
+  $("#github").on("click", function(){
+
+        window.open('https://github.com/leshyabracaglia');
+
+    });
+
+});
+
 function slacktribe(){
 
-    window.location.href = "http://leshyabracaglia.me/slacktribe.html";
+    window.open('http://leshyabracaglia.me/slacktribe.html');
 
 }
 
@@ -82,4 +118,5 @@ function cio(){
     window.location.href = "http://leshyabracaglia.me/mycio.html";
 
 }
+
 

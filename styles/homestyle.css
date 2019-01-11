@@ -5,7 +5,7 @@ body {
     width: 100vw;
     position: relative;
     font-family: 'Roboto', sans-serif;
-    background-image: url('../images/bg3.gif');
+    background-image: url('../images/bg.jpg');
     background-position: center;
     background-size: 150%;
     cursor: pointer, default;
@@ -19,13 +19,15 @@ body {
     align-content: center;
 }
 
+/*formobile youu shoujld make it so ock goes on left side and icons are botj on right*/
+
 .dock {
-    height: 170px;
-    background-color: black;
+    height: 17%;
+    background-color: rgb(30,23,30);
     opacity: 0.7;
     position: absolute;
     text-align: center;
-    bottom: 1%;
+    bottom: 0%;
     margin: 0 auto;
     width: 75%;
     border-top-left-radius: 7px;
@@ -33,27 +35,29 @@ body {
 }
 
 .dock2 {
-    height: 170px;
+    height: 17%;
     position: absolute;
     text-align: center;
-    bottom: 1%;
+    bottom: 0%;
     margin: 0 auto;
     width: 75%;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
-    box-shadow: 3px -3px 3px 2px rgba(252,252,252,0.75);
+    border-bottom: none;
+    box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
 }
 
-ul{
+ul {
     font-size: medium;
     font-weight: bold;
     list-style-type: none;
     margin: 0px;
-    background-color: black;
-    opacity: 0.7;
+    background-color: rgb(30,23,30);
+    opacity: 0.6;
     overflow: hidden;
     padding: 0px;
-    box-shadow: 0px 3px 4px 0px rgba(255,255,255,0.75);
+    box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+    border-bottom: 1px white solid;
 }
 
 .word{
@@ -67,7 +71,8 @@ ul{
 .icon-label {
     font-weight: bold;
     color: white;
-    font-variant: small-caps;
+    text-shadow: 3px 3px 4px black;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .icon-label:hover {
@@ -75,70 +80,31 @@ ul{
 }
 
 #icon1{
-    width: 100px;
-    height: 100px;
     position: absolute;
-    bottom: 60px;
-    left: 200px;
-}
-.icon-label2 {
-    font-weight: bold;
-    color: white;
-    font-variant: small-caps;
+    top: 30%;
+    right: 10%;
 }
 
-#icon2 {
-    position: absolute;
-    bottom: -2%;
-    left: 50%;
-}
-
-#icon2:hover {
+.txt:hover {
     cursor: pointer;
 }
 
-.cio:hover {
-    cursor: pointer;
-}
-
-.icon-label3 {
+.icon-label4 {
     font-weight: bold;
     color: white;
-    margin-left: 9%;
     text-align: justify;
-    font-variant: small-caps;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 2px 2px 4px black;
 }
 
-#icon3 {
-    width: 10%;
+#icon4 {
     position: absolute;
-    bottom: -2%;
-    right: 33%;
+    top: 15%;
+    left: 5%;
 }
 
-#icon3:hover {
+#icon4:hover {
     cursor: pointer;
-}
-
-.resume{
-    width: 70px;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-
-}
-
-.dialog-title{
-    font-variant: small-caps;
-}
-
-.subtitle {
-    margin: 0 0 2em 0;
-}
-
-.subtitle{
-    text-align: center;
-    height: 10px;
 }
 
 li {
@@ -163,18 +129,19 @@ li a {
 }
 
 
-h1{
-  	font-style: oblique;
-  	font-size: 19px;
-  	margin-bottom: 0px;
-  	margin-top: 0px;
+h1 {
+    font-style: oblique;
+    font-size: 19px;
+    margin-bottom: 0px;
+    margin-top: 0px;
     padding-top: 0px;
     line-height: 1;
     color: white;
-    font-variant: small-caps;
     top: 13px;
     right: 15px;
     position: absolute;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .dialog {
@@ -238,20 +205,36 @@ td {
   opacity: 1;
 }
 
-.window{
-    height: 50%;
-    width: 50%;
-    background-color: /*rgb(47,44,50)*/rgb(40,33,40);
-    border: solid 2px black;
+.window {
+    height: 250px;
+    width: 40%;
+    background-color: white;
+    border: solid 3px black;
     top: 10%;
-    left: 5%;
+    left: 20%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+}
+
+.portfolio {
+    height: 250px;
+    position: absolute;
+    width: 40%;
+    background-color: white;
+    border: solid 3px black;
+    top: 30%;
+    left: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
 }
 
 .winhead {
     height: 10%;
     background-color: rgb(67,65,70);
     border: solid 1px black;
-    padding-bottom: 1%;
+    padding-bottom: 3%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     padding-top: 0;
 
 }
@@ -260,13 +243,39 @@ td {
     cursor: move;
 }
 
-p.wtext{
+p.wtext {
     font-size: 2vw;
-    margin: 0;
-    margin-bottom: 50%;
-    padding: 0;
+    display: inline;
+    width: 40%;
+    text-align: center;
+    padding: 70px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 2px;
+    text-shadow: 2px 3px 3px black;
 }
 
 .close:hover{
     cursor: pointer;
+}
+
+.close{
+    margin-left: 4px;
+    margin-top: 5px;
+}
+
+p{
+    color: black;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+#linkedin:hover{
+    cursor: pointer;
+    border: solid white;
+}
+
+#github:hover {
+    cursor: pointer;
+    border: solid white;
 }
