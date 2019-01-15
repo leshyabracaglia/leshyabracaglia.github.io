@@ -4,7 +4,6 @@ body {
     height: 100vh;
     width: 100vw;
     position: relative;
-    font-family: 'Roboto', sans-serif;
     background-image: url('../images/bg.jpg');
     background-position: center;
     background-size: 150%;
@@ -21,36 +20,26 @@ body {
 
 /*formobile youu shoujld make it so ock goes on left side and icons are botj on right*/
 
-.dock {
+.dock { /*dock background*/
     height: 17%;
     background-color: rgb(30,23,30);
-    opacity: 0.7;
+    opacity: 0.6;
     position: absolute;
-    text-align: center;
     bottom: 0%;
     margin: 0 auto;
     width: 75%;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
-}
-
-.dock2 {
-    height: 17%;
-    position: absolute;
-    text-align: center;
-    bottom: 0%;
-    margin: 0 auto;
-    width: 75%;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-    border-bottom: none;
     box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
 }
 
-ul {
-    font-size: medium;
-    font-weight: bold;
-    list-style-type: none;
+#dock2 { /*invisible contains icons*/
+    text-align: center;
+    opacity: 1.0;
+    background-color: transparent;
+}
+
+ul { /*Top gray bar*/
     margin: 0px;
     background-color: rgb(30,23,30);
     opacity: 0.6;
@@ -60,54 +49,7 @@ ul {
     border-bottom: 1px white solid;
 }
 
-.word{
-    width: 100%;
-}
-
-.word:hover {
-   cursor: pointer;
-}
-
-.icon-label {
-    font-weight: bold;
-    color: white;
-    text-shadow: 3px 3px 4px black;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.icon-label:hover {
-    cursor: pointer;
-}
-
-#icon1{
-    position: absolute;
-    top: 30%;
-    right: 10%;
-}
-
-.txt:hover {
-    cursor: pointer;
-}
-
-.icon-label4 {
-    font-weight: bold;
-    color: white;
-    text-align: justify;
-    font-family: 'Open Sans', sans-serif;
-    text-shadow: 2px 2px 4px black;
-}
-
-#icon4 {
-    position: absolute;
-    top: 15%;
-    left: 5%;
-}
-
-#icon4:hover {
-    cursor: pointer;
-}
-
-li {
+li { /*header ext size which dictates size */
     display: block;
     float: left;
     font-family: helvetica;
@@ -115,23 +57,11 @@ li {
     font-size: 40px;
     padding: 0px;
     margin: 0px;
-    border-left: 1px groove;
-    border-right: 1px groove;
-    border-radius: 3px;
-    border: none;
 }
 
-li a {
-    display: block;
-    text-align: center;
-    padding: 18px 20px;
-    text-decoration: none;
-}
-
-
-h1 {
+h1 { /*clock text*/
     font-style: oblique;
-    font-size: 19px;
+    font-size: 22px;
     margin-bottom: 0px;
     margin-top: 0px;
     padding-top: 0px;
@@ -144,138 +74,167 @@ h1 {
     font-family: 'Open Sans', sans-serif;
 }
 
-.dialog {
-    width: 300px;
-}
-
-.folder-title-drag {
-    cursor: move;
-}
-
-
-.desktop-folder__title-background {
+#portfolio { /*portfolio icon*/
     position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    margin: 0 0.8rem 0 2.5rem;
-    height: 4rem;
-    background-image: url('../img/window-tres-lineas.svg');
-    background-position: 50% 0.4rem;
-    background-size: 67rem 1.3rem;
-    background-repeat: no-repeat;
-    pointer-events: none;
-    z-index: -1;
+    bottom: 20%;
+    right: 5%;
 }
 
-.dialog-title {
-    pointer-events: none;
-    padding: 0 0.5rem;
-    background-color: #DADAD3;
+.icon-label {
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 4px black;
+    font-family: 'Open Sans', sans-serif;
 }
 
-img{
-	align: center;
-	border-radius: 40px;
+#portfolio:hover {
+    cursor: pointer; 
 }
 
-a:link {
-    color: #ca80fc;
-    font-style: oblique;
+
+#welcome { /*welcome txt icon*/
+    position: absolute;
+    top: 15%;
+    left: 5%;
 }
 
-a:visited{
-	color: #ca80fc;
-	font-style: oblique;
+.icon-label2 {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 2px 2px 4px black;
+    margin: 0;
+    margin-top: 5px;
 }
 
-a:active {
-    color: #ca80fc;
+#welcome:hover {
+    cursor: pointer;
+}
+
+#creds { /*welcome txt icon*/
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    opacity: 0.5;
+}
+
+.icon-label3 {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 2px 2px 4px black;
+    margin: 0;
+    margin-top: 5px;
+}
+
+#creds:hover {
+    cursor: pointer;
+}
+
+#phot { /*welcome txt icon*/
+    position: absolute;
+    top: 15%;
+    right: 30%;
+    opacity: 0.5;
+}
+
+.icon-label4 {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 2px 2px 4px black;
+    margin: 0;
+    margin-top: 5px;
+}
+
+#phot:hover {
+    cursor: pointer;
 }
 
 td {
 	border: 2.0px solid rgb(204,204,204);
 }
 
-.container:hover .image {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
-  opacity: 1;
-}
-
-.window {
-    height: 250px;
-    width: 40%;
+.window { /*Window*/
+    width: 30%;
     background-color: white;
     border: solid 3px black;
-    top: 10%;
-    left: 20%;
     border-radius: 8px;
     box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
 }
 
-.portfolio {
-    height: 250px;
-    position: absolute;
-    width: 40%;
-    background-color: white;
-    border: solid 3px black;
-    top: 30%;
-    left: 50px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
+#window1 {
+    top: 25%;
+    left: 20%;
 }
 
-.winhead {
-    height: 10%;
+
+
+.winhead { /*title header on window*/
+    height: 30px;
     background-color: rgb(67,65,70);
+    margin: 0;
     border: solid 1px black;
-    padding-bottom: 3%;
+    padding: 0;
+    padding-bottom: 4%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    padding-top: 0;
-
 }
 
-.winhead:hover{
-    cursor: move;
-}
-
-p.wtext {
+p.wtext { /*window header text*/
     font-size: 2vw;
     display: inline;
-    width: 40%;
     text-align: center;
-    padding: 70px;
+    padding: 0;
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Arvo', serif;
     margin-bottom: 2px;
     text-shadow: 2px 3px 3px black;
 }
 
-.close:hover{
-    cursor: pointer;
+.winhead:hover {
+    cursor: move;
 }
 
-.close{
+p { /*text in window*/
+    color: black;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.close {
     margin-left: 4px;
     margin-top: 5px;
 }
 
-p{
-    color: black;
-    margin-left: 5%;
-    margin-top: 5%;
+/*maybe make it one close in the jsby using parent of parent hhide*/
+
+.close:hover {
+    cursor: pointer;
 }
 
-#linkedin:hover{
-    cursor: pointer;
-    border: solid white;
+.social {
+    margin-top: 2%;
+    position: initial;
+    border-radius: 60px;
 }
 
-#github:hover {
+.social:hover {
     cursor: pointer;
-    border: solid white;
+    border: dashed 4px white;
+}
+
+.trash {
+    bottom: 10px;
+    right: 10%;
+}
+
+#window2{
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    right: 20%;
 }
