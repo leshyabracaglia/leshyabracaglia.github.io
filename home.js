@@ -27,7 +27,7 @@ function updateClock(){
 
 $(document).ready(function () { //home window
 
-    $( ".window" ).draggable({ containment: 'body' });
+    $(".window").draggable({revert: false});
     $( "#window2" ).draggable({ containment: 'body' });
 
     $("#close1").on("click", function(){
@@ -37,7 +37,7 @@ $(document).ready(function () { //home window
         $("#window2").hide();
     });
      $("#welcome").on("click", function(){
-        $(".window").show();
+        $("#window1").show();
      });
     $("#portfolio").on("click", function(){
         $("#window2").show();
@@ -49,15 +49,13 @@ $(document).ready(function () { //home window
 
 $(document).ready(function () { //open slacktribe example website when clicked
 
-  $(".st").on("click", slacktribe);
-    $(".icon-label2").on("click", slacktribe);
+  $("#st").on("click", slacktribe);
 
 });
 
 $(document).ready(function () { //open resume when clicked
 
-  $(".cio").on("click", cio);
-    $(".icon-label3").on("click", cio);
+  $("#cio").on("click", cio);
 
 });
 

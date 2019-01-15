@@ -1,7 +1,6 @@
+
 <!DOCTYPE html>
 <html>
-
-<link rel="stylesheet" type="text/css" href="styles/homestyle.css">
 
 <head>
 
@@ -10,6 +9,15 @@
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/jquery-ui.js" type="text/javascript"></script>
     <script type="text/javascript" src='home.js'></script>
     <link href="https://fonts.googleapis.com/css?family=Arvo|Open+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="http://fonts.googleapis.com/css?family=Arvo|Open+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles/homestyle.css">
+    <script type="text/javascript" src='home.js'></script>
+
 
     <title>Leshya Bracaglia</title>
 </head>
@@ -42,8 +50,9 @@
         </div>
     </div>
 
-    <!--trash-->
+    <!--trash
     <img src="images/trash.png" height="10%" class="trash"/>
+        -->
 
     <div id="portfolio">
         <img src="images/folder.png" style="width: 150px;" /><h3 class="icon-label2"><strong>Website Portfolio</strong></h3>
@@ -64,7 +73,7 @@
     <!--Welcome Window-->
     <div class="window ui-widget-content" id="window1">
         <div class="winhead">
-            <img src="images/exit.png" width="6%" class="close" id="close1" />
+            <img src="images/exit.png" width="8%" class="close" id="close1" />
             <p class="wtext">&nbsp;&hearts;&nbsp;Welcome.txt&nbsp;&nbsp;</p>
         </div>
         <p>Hello, my name is Leshya Bracaglia, and I am a computer science undergrad student at NYU</p>
@@ -80,8 +89,16 @@
             <img src="images/exit.png" width="6%" class="close" id="close2" />
             <p class="wtext" hidden>&nbsp;&hearts;&nbsp;Website Portfolio&nbsp;&nbsp;</p>
         </div>
-        <img title="A website for an NYC art group" src="images/sticon.jpg" width="20%" style="margin-left: 5%; margin-top: 5%; border-radius: 10px;" /><h3><strong>Slacktribe</strong></h3>
-        <img title="A website for a Philadephia financial planning firm" src="images/mycio.jpg" width="20%" style="margin-left: 5%; margin-top: 5%; border-radius: 10px;" /><h3><strong>myCIO</strong></h3>
+        <div class="row" style="margin: 5px;">
+            <div class="col-md-6" id="st" style="margin: 0 auto;">
+                <img title="A website for an NYC art group" src="images/sticon.jpg" style="margin-left: 10%; margin-top: 5%; border-radius: 10px; width: inherit;" />
+                <h3><strong>Slacktribe</strong></h3>
+            </div>
+            <div class="col-md-6" id="cio">
+                <img title="A website for a Philadephia financial planning firm" src="images/mycio.jpg" style="margin: auto; margin-top: 5%; border-radius: 20px; width: inherit;" />
+                <h3><strong>myCIO</strong></h3>
+            </div>
+        </div>
     </div>
 
 
