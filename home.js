@@ -29,6 +29,8 @@ $(document).ready(function () { //home window
 
     $(".window").draggable({revert: false});
     $( "#window2" ).draggable({ containment: 'body' });
+    $( "#window3" ).draggable({ containment: 'body' });
+    $( "#window4" ).draggable({ containment: 'body' });
 
     $("#close1").on("click", function(){
         $("#window1").hide();
@@ -36,11 +38,23 @@ $(document).ready(function () { //home window
     $("#close2").on("click", function(){
         $("#window2").hide();
     });
+     $("#close3").on("click", function(){
+        $("#window3").hide();
+    });
+     $("#close4").on("click", function(){
+        $("#window4").hide();
+    });
      $("#welcome").on("click", function(){
         $("#window1").show();
      });
     $("#portfolio").on("click", function(){
         $("#window2").show();
+    });
+    $("#creds").on("click", function(){
+        $("#window3").show();
+    });
+    $("#phot").on("click", function(){
+        $("#window4").show();
     });
 
 });
@@ -78,5 +92,18 @@ function slacktribe(){
 function cio(){
     window.location.href = "http://leshyabracaglia.me/mycio.html";
 }
+
+// Activate Carousel
+$("#myCarousel").carousel();
+
+// Enable Carousel Indicators
+$(".item").click(function(){
+  $("#myCarousel").carousel(1);
+});
+
+// Enable Carousel Controls
+$(".left").click(function(){
+  $("#myCarousel").carousel("prev");
+});
 
 

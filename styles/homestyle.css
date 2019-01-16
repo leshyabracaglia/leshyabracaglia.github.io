@@ -116,7 +116,6 @@ h1 { /*clock text*/
     position: absolute;
     top: 20%;
     right: 5%;
-    opacity: 0.5;
 }
 
 .icon-label3 {
@@ -169,6 +168,19 @@ td {
 #window1 {
     top: 25%;
     left: 20%;
+}
+
+#window4 {
+    top: -20%;
+    left: 10%;
+}
+
+.photography { /*Window*/
+    width: 60%;
+    background-color: white;
+    border: solid 3px black;
+    border-radius: 8px;
+    box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
 }
 
 
