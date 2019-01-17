@@ -33,7 +33,15 @@ $(document).ready(function () { //home window
 
     $( "#window4" ).drags();
 
-interact('#window4').draggable();
+    $('.window').on("click", function(){
+
+        $(this).parent().append($(this));
+    });
+
+     $('#window4').on("click", function(){
+
+        $(this).parent().append($(this));
+    }); 
 
     $("#close1").on("click", function(){
         $("#window1").hide();
@@ -49,15 +57,19 @@ interact('#window4').draggable();
     });
      $("#welcome").on("click", function(){
         $("#window1").show();
+        $('#window1').parent().append($('#window1'));
      });
     $("#portfolio").on("click", function(){
         $("#window2").show();
+        $('#window2').parent().append($('#window2'));
     });
     $("#creds").on("click", function(){
         $("#window3").show();
+        $('#window3').parent().append($('#window3'));
     });
     $("#phot").on("click", function(){
         $("#window4").show();
+        $('#window4').parent().append($('#window4'));
     });
 
 });
@@ -93,7 +105,7 @@ function slacktribe(){
 }
 
 function cio(){
-    window.location.href = "http://leshyabracaglia.me/mycio.html";
+    window.open("http://leshyabracaglia.me/mycio.html");
 }
 
 // Activate Carousel
@@ -109,6 +121,8 @@ $(".left").click(function(){
   $("#myCarousel").carousel("prev");
 });
 
+
+//Function makes windows draggable
 (function($) {
     $.fn.drags = function(opt) {
 
@@ -150,5 +164,31 @@ $(".left").click(function(){
 
     }
 })(jQuery);
+
+//Function types out welcome window
+function randomIntFromInterval(min,max)
+{
+    return Math.floor(Math.random()*(max-min+1)+min);
+}
+
+function typeWrite(span){
+  $('#'+span).addClass('cursor')
+  var text = $('#'+span).text();
+  var randInt = 0
+  for (var i = 0; i < text.length; i++) {
+    randInt += parseInt(randomIntFromInterval(50,150));
+    var typing = setTimeout(function(y){
+      $('#'+span).append(text.charAt(y));
+    },randInt, i);
+  };
+  setTimeout(function(){
+    $('#'+span).removeClass('cursor');
+  },randInt+2500);
+}
+
+$(document).ready(function(){
+  typeWrite('type');
+});
+
 
 

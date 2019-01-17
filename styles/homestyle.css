@@ -60,7 +60,6 @@ li { /*header ext size which dictates size */
 }
 
 h1 { /*clock text*/
-    font-style: oblique;
     font-size: 22px;
     margin-bottom: 0px;
     margin-top: 0px;
@@ -71,7 +70,9 @@ h1 { /*clock text*/
     right: 15px;
     position: absolute;
     text-shadow: 2px 2px 2px black;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1em;
 }
 
 #portfolio { /*portfolio icon*/
@@ -80,32 +81,14 @@ h1 { /*clock text*/
     right: 5%;
 }
 
-.icon-label {
-    font-weight: bold;
-    color: white;
-    text-shadow: 3px 3px 4px black;
-    font-family: 'Open Sans', sans-serif;
-}
-
 #portfolio:hover {
     cursor: pointer; 
 }
-
 
 #welcome { /*welcome txt icon*/
     position: absolute;
     top: 15%;
     left: 5%;
-}
-
-.icon-label2 {
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    text-shadow: 2px 2px 4px black;
-    margin: 0;
-    margin-top: 5px;
 }
 
 #welcome:hover {
@@ -118,16 +101,6 @@ h1 { /*clock text*/
     right: 5%;
 }
 
-.icon-label3 {
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    text-shadow: 2px 2px 4px black;
-    margin: 0;
-    margin-top: 5px;
-}
-
 #creds:hover {
     cursor: pointer;
 }
@@ -138,18 +111,18 @@ h1 { /*clock text*/
     right: 30%;
 }
 
-.icon-label4 {
-    font-weight: bold;
+#phot:hover {
+    cursor: pointer;
+}
+
+.icon-label {
     color: white;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Code Pro', monospace;
     text-shadow: 2px 2px 4px black;
     margin: 0;
     margin-top: 5px;
-}
-
-#phot:hover {
-    cursor: pointer;
+    text-align: center;
 }
 
 td {
@@ -170,6 +143,12 @@ td {
     left: 20%;
 }
 
+#window3 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+}
+
 
 #window4 {
     position: absolute;
@@ -184,8 +163,6 @@ td {
     border-radius: 8px;
     box-shadow: 2px 2px 21px 0px rgba(0,0,0,0.75);
 }
-
-
 
 .winhead { /*title header on window*/
     height: 40px;
@@ -204,7 +181,7 @@ p.wtext { /*window header text*/
     text-align: center;
     padding: 0;
     color: white;
-    font-family: 'Arvo', serif;
+    font-family: 'Source Code Pro', monospace;
     margin-bottom: 2px;
     text-shadow: 2px 3px 3px black;
 }
@@ -217,6 +194,18 @@ p { /*text in window*/
     color: black;
     padding-left: 5%;
     padding-right: 5%;
+    font-family: 'Open Sans', sans-serif;
+    margin: 5%;
+}
+
+span { /*text in window*/
+    color: black;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    display: inline-block;
+    margin: 15px;
 }
 
 .close {
@@ -259,4 +248,32 @@ p { /*text in window*/
 
 #st:hover{
     cursor: pointer;
+}
+
+.cursor:after {
+    content: "_";
+    opacity: 0;
+    animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
