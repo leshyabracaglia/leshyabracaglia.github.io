@@ -1,31 +1,81 @@
 <!-- yes I can still code in vanilla html :) -->
-<div style="background-color: #f0f0f0; height: 100vh;">
-  <marquee>
-    <h2>Leshya Bracaglia</h2> 
-  </marquee>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Leshya Bracaglia</title>
+  <style>
+    canvas {
+      background-color: #f0f0f0;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div style="background-color: #f0f0f0; height: 100vh;">
+    <marquee>
+      <h2>Leshya Bracaglia</h2> 
+    </marquee>
 
-  <div style="text-align: center; padding-left: 100px; padding-right: 100px;">
-    <h1>Leshya Bracaglia</h1>
-    <h2>Full Stack Developer</h2>
+    <div style="text-align: center; padding-left: 100px; padding-right: 100px;">
+      <canvas id="sphereCanvas" width="300" height="300"></canvas>
+    </div>
+
+    <div style="text-align: center; padding-left: 100px; padding-right: 100px;">
+      <h1>Leshya Bracaglia</h1>
+      <h2>Full Stack Developer</h2>
+    </div>
+
+    <div style="text-align: center; padding-left: 100px; padding-right: 100px;">  
+      <p>Hi, I'm Leshya. I'm a full stack developer with 5 years of experience and a passion for creating beautiful and functional websites.</p>
+      <p>I love clean code and best practices.</p>
+      <p>I'm a quick learner and I'm always looking to improve my skills.</p>
+      <p>I'm currently working as a full stack developer at <a href="https://beacons.ai" target="_blank" rel="noopener noreferrer">Beacons AI</a>.</p>
+    </div>
+
+    <ul style="text-align: center; list-style-type: none; padding: 0;">
+      <li style="margin: 0 10px; font-size: 20px;">
+        <a href="https://www.linkedin.com/in/leshya-bracaglia/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </li>
+      <li style="margin: 0 10px; font-size: 20px; padding-top: 10px;">
+        <a href="https://github.com/leshyabracaglia" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </li>
+    </ul>
+
+    <marquee>
+      <h2>Leshya Bracaglia</h2> 
+    </marquee>
   </div>
 
-  <div style="text-align: center; padding-left: 100px; padding-right: 100px;">  
-    <p>Hi, I'm Leshya. I'm a full stack developer with 5 years of experience and a passion for creating beautiful and functional websites.</p>
-    <p>I also love clean code and good design.</p>
-    <p>I'm a quick learner and I'm always looking to improve my skills.</p>
-    <p>I'm currently working as a full stack developer at <a href="https://beacons.ai" target="_blank" rel="noopener noreferrer">Beacons AI</a>.</p>
-  </div>
+  <script>
+    const canvas = document.getElementById('sphereCanvas');
+    const ctx = canvas.getContext('2d');
 
-  <ul style="text-align: center; list-style-type: none; padding: 0;">
-    <li style="margin: 0 10px; font-size: 20px;">
-      <a href="https://www.linkedin.com/in/leshya-bracaglia/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </li>
-    <li style="margin: 0 10px; font-size: 20px; padding-top: 10px;">
-      <a href="https://github.com/leshyabracaglia" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </li>
-  </ul>
+    const centerX = canvas.width / 2;
+    const centerY = canvas.height / 2;
+    const radius = 100;
 
-  <marquee>
-    <h2>Leshya Bracaglia</h2> 
-  </marquee>
-</div>
+    // Create a radial gradient to simulate a 3D sphere look
+    const gradient = ctx.createRadialGradient(
+      centerX - 40, centerY - 40, 20, // light source
+      centerX, centerY, radius
+    );
+    gradient.addColorStop(0, '#e10098'); // light GraphQL pink
+    gradient.addColorStop(1, '#8e2f9d'); // deep purple
+
+    // Draw sphere
+    ctx.beginPath();
+    ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+    ctx.fillStyle = gradient;
+    ctx.fill();
+    ctx.closePath();
+
+    // Add "GraphQL" text
+    ctx.font = 'bold 21px Arial';
+    ctx.fillStyle = '#ffffff';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('Leshya Bracaglia', centerX, centerY);
+  </script>
+</body>
+</html>
